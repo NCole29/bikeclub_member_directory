@@ -1,0 +1,15 @@
+{
+    "name": "bikeclub/bikeclub_member_directory",
+    "description": "Provides opt-in member directory to list name and city/town with a link to the member contact form.",
+    "keywords": ["recipe", "Drupal standard install"],
+    "type": "drupal-recipe",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name": "Nancy Cole",
+            "homepage": "https://bikeclubsites.com",
+            "role": "Maintainer"
+        }
+    ],
+    "version": "1.0.1"
+}

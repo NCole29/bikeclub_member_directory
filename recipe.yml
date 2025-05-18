@@ -1,0 +1,11 @@
+name: 'Bikeclub Member directory'
+description: 'Provides opt-in member directory.'
+type: 'Contact form'
+install:
+  - contact
+  - user
+  - views
+  # Contrib.
+  - civicrm_entity
+  - user_contacts
+
