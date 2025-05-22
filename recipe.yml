@@ -1,5 +1,5 @@
 name: 'Bikeclub Member directory'
-description: 'Provides opt-in member directory.'
+description: 'Provides an opt-in member directory.'
 type: 'Contact form'
 install:
   - contact
