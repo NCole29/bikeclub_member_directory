@@ -8,4 +8,34 @@ install:
   # Contrib.
   - civicrm_entity
   - user_contacts
-
+config:
+  strict: false
+  actions:
+    civicrm_entity.settings:
+      simple_config_update:
+        filter_format: plain_text
+        enabled_entity_types:
+          civicrm_address: civicrm_address
+          civicrm_contact: civicrm_contact
+    core.entity_form_display.user.user.default:
+      setComponent:
+        name: field_directory
+        options:
+          type: boolean_checkbox
+          weight: 2
+          region: content
+          settings:
+            display_label: true
+    views.view.user_account:
+      setComponent:
+        field_directory:
+          id: field_directory
+          table: user__field_directory
+          field: field_directory
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+    
