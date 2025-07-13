@@ -26,6 +26,18 @@ config:
           region: content
           settings:
             display_label: true
+    core.entity_view_display.user.user.default:
+      setComponent:
+        field_directory:
+          type: boolean
+          label: inline
+          settings:
+            format: default
+            format_custom_false: ''
+            format_custom_true: ''
+          third_party_settings: {  }
+          weight: 2
+          region: content
     views.view.user_account:
       setComponent:
         field_directory:
