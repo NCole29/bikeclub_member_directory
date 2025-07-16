@@ -50,4 +50,3 @@ config:
           plugin_id: field
           label: ''
           exclude: false
-    
