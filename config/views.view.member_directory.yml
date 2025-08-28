@@ -1,9 +1,9 @@
+uuid: 847d86c8-6fcb-4af9-a946-047936155c01
 langcode: en
 status: true
 dependencies:
   config:
     - system.menu.main
-    - user.role.administrator
     - user.role.member
   module:
     - civicrm_entity
@@ -308,7 +308,7 @@ display:
         type: basic
         options:
           submit_button: Apply
-          reset_button: false
+          reset_button: true
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
           expose_sort_order: true
@@ -318,7 +318,6 @@ display:
         type: role
         options:
           role:
-            administrator: administrator
             member: member
       cache:
         type: tag
@@ -402,7 +401,8 @@ display:
             required: false
             remember: false
             multiple: false
-            remember_roles: { }
+            remember_roles:
+              authenticated: authenticated
             placeholder: ''
           is_grouped: false
           group_info:
@@ -455,6 +455,7 @@ display:
           empty_table: false
           caption: ''
           description: ''
+          class: ''
       row:
         type: fields
         options:
@@ -481,8 +482,6 @@ display:
           entity_type: user
           plugin_id: civicrm_entity_civicrm_contact_user
           required: false
-          domain_id:
-            _current_: _current_
         reverse__civicrm_address__contact_id:
           id: reverse__civicrm_address__contact_id
           table: civicrm_contact
@@ -493,9 +492,6 @@ display:
           entity_type: civicrm_contact
           plugin_id: civicrm_entity_reverse_location
           required: false
-          location_type: '0'
-          is_billing: 0
-          is_primary: 1
       css_class: w3-table-all
       header: {  }
       footer: {  }
@@ -530,7 +526,6 @@ display:
         local_task_link_title: ''
         local_task_parent: 'views_view:view.block_content.page_1'
         local_task_weight: 0
-        local_task_custom_parent_route: ''
     cache_metadata:
       max-age: -1
       contexts:
