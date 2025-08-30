@@ -7,7 +7,7 @@ install:
   - views
   # Contrib.
   - civicrm_entity
-  - user_contacts
+  - user_contactlink
 config:
   strict: false
   actions:
