@@ -6,8 +6,8 @@ dependencies:
     - user.role.authenticated
   module:
     - user
-id: user_account
-label: 'User account'
+id: club_account
+label: 'Club account'
 module: views
 description: ''
 tag: ''

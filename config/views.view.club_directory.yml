@@ -7,8 +7,8 @@ dependencies:
   module:
     - civicrm_entity
     - user
-id: member_directory
-label: 'Member directory'
+id: club_directory
+label: 'Club directory'
 module: views
 description: 'Member directory. Members must opt in.'
 tag: ''
